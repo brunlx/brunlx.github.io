@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alimente o Boneco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <div class="game-container">
+    <header class="game-header">
+      <div class="logo-badge" aria-hidden="true">🍽️</div>
+      <h1>Alimente o Boneco</h1>
+      <p class="subtitle">Monte o corpo ideal com cada refeição</p>
+    </header>
+
+    <main>
+      <section class="character-section" aria-label="Personagem">
+        <div class="character-stage">
+          <div class="character-wrapper">
+            <canvas id="characterCanvas" width="280" height="360" aria-label="Boneco animado"></canvas>
+            <div class="character-glow" aria-hidden="true"></div>
+          </div>
+          <p class="message" id="message">Clique em um alimento para começar!</p>
+        </div>
+      </section>
+
+      <section class="stats-section" aria-label="Estatísticas">
+        <article class="stat-card" data-stat="muscle">
+          <div class="stat-header">
+            <span class="stat-icon">💪</span>
+            <span class="stat-label">Músculo</span>
+          </div>
+          <div class="stat-value" id="muscleValue">50</div>
+          <div class="stat-bar"><div class="stat-fill muscle" id="muscleBar" style="width:50%"></div></div>
+        </article>
+        <article class="stat-card" data-stat="fat">
+          <div class="stat-header">
+            <span class="stat-icon">🍔</span>
+            <span class="stat-label">Gordura</span>
+          </div>
+          <div class="stat-value" id="fatValue">50</div>
+          <div class="stat-bar"><div class="stat-fill fat" id="fatBar" style="width:50%"></div></div>
+        </article>
+        <article class="stat-card" data-stat="health">
+          <div class="stat-header">
+            <span class="stat-icon">❤️</span>
+            <span class="stat-label">Saúde</span>
+          </div>
+          <div class="stat-value" id="healthValue">50</div>
+          <div class="stat-bar"><div class="stat-fill health" id="healthBar" style="width:50%"></div></div>
+        </article>
+      </section>
+
+      <section class="food-section" aria-label="Alimentos">
+        <div class="food-section-header">
+          <p class="section-label">Escolha um alimento</p>
+          <div class="food-filters" id="foodFilters" role="tablist"></div>
+        </div>
+        <div class="food-grid" id="foodGrid" role="list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <button type="button" class="btn btn-reset" id="resetBtn">↺ Resetar jogo</button>
+    </footer>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
