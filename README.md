@@ -12,4 +12,5 @@ Você pode usar de dois jeitos:
 |--------|-------------|---------------------|
 | **A — Site principal** | `https://brunlx.github.io/` | Exatamente `brunlx.github.io` |
 | **B — Projeto** | `https://brunlx.github.io/NOME-DO-REPO/` | Qualquer nome (ex. `alimente-o-boneco`) |
-| | Me Siga Em @brunlx.xz|
+
+ Me Siga Em @brunlx.xz
