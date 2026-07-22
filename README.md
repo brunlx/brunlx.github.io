@@ -6,7 +6,7 @@ Jogo em HTML, CSS e JavaScript: alimente o personagem e veja músculo, gordura e
 
 No GitHub o site **já é hospedado em domínio `.io`**: `github.io`.
 
-Você pode usar de dois jeitos:
+Você pode usar ele via hospedagem:
 
 | Opção | URL do jogo | Nome do repositório |
 |--------|-------------|---------------------|
